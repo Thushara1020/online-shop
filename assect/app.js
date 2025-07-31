@@ -1,4 +1,4 @@
-// Product list with string IDs and image paths
+
 const products = [
     { id: 1, name: "Gaming Laptop", price: 634000.00, img: "/assect/img/ROG LAPTOP.png" },
     { id: 2, name: "Gaming Mouse", price: 22000.00, img: "/assect/img/Mouse.png" },
@@ -10,7 +10,7 @@ const products = [
     { id: 8, name: "Graphics Cards", price: 1035500.00, img: "/assect/img/MSI B840 Gaming Plus WIFI Motherboard.png" },
 ];
 
-// Render product cards if container exists (products.html)
+
 if (document.getElementById("product-card-list")) {
     const container = document.getElementById("product-card-list");
     products.forEach(product => {
@@ -26,7 +26,7 @@ if (document.getElementById("product-card-list")) {
     });
 }
 
-// Add to cart function (works everywhere)
+
 function addToCart(id) {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
     const product = products.find(p => p.id === id);
@@ -41,7 +41,7 @@ function addToCart(id) {
     alert("Item added to cart!");
 }
 
-// Render cart items if cart-items container exists (order.html)
+
 if (document.getElementById("cart-items")) {
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
     const container = document.getElementById("cart-items");
@@ -68,7 +68,7 @@ if (document.getElementById("cart-items")) {
     }
 }
 
-// Place order function (order.html)
+
 function placeOrder() {
     alert("Order placed successfully!");
     localStorage.removeItem("cart");
