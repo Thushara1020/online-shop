@@ -1,13 +1,13 @@
 
 const products = [
-    { id: 1, name: "Gaming Laptop", price: 634000.00, img: "/assect/img/ROG LAPTOP.png" },
-    { id: 2, name: "Gaming Mouse", price: 22000.00, img: "/assect/img/Mouse.png" },
-    { id: 3, name: "GAMING CHAIR", price: 88000.00, img: "/assect/img/Chairg.png" },
-    { id: 4, name: "Mechanical Keyboard", price: 16900.00, img: "/assect/img/KeyBord.png" },
-    { id: 5, name: "MotherBoard", price: 73500.00, img: "/assect/img/KeyBord.png" },
-    { id: 6, name: "Monitor", price: 49000.00, img: "/assect/img/Monitors.png" },
-    { id: 7, name: "RGB PC Case", price: 25500.00, img: "/assect/img/PC Cases.png" },
-    { id: 8, name: "Graphics Cards", price: 1035500.00, img: "/assect/img/MSI B840 Gaming Plus WIFI Motherboard.png" },
+    { id: 1, name: "Gaming Laptop", price: 634000.00, },
+    { id: 2, name: "Gaming Mouse", price: 22000.00, },
+    { id: 3, name: "GAMING CHAIR", price: 88000.00, },
+    { id: 4, name: "Mechanical Keyboard", price: 16900.00, },
+    { id: 5, name: "MotherBoard", price: 73500.00, },
+    { id: 6, name: "Monitor", price: 49000.00, },
+    { id: 7, name: "RGB PC Case", price: 25500.00, },
+    { id: 8, name: "Graphics Cards", price: 1035500.00, },
 ];
 
 
@@ -64,7 +64,7 @@ if (document.getElementById("cart-items")) {
     }
 
     if (document.getElementById("total")) {
-        document.getElementById("total").textContent = total.toLocaleString(undefined, {minimumFractionDigits: 2});
+        document.getElementById("total").textContent = total.toLocaleString(undefined, { minimumFractionDigits: 2 });
     }
 }
 
